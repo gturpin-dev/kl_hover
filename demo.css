@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Cabin&display=swap');
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+* {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cabin', sans-serif;
+  color: #6f6f6f;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color: #563d7c;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  color: #563d7c;
+  font-size: 28px;
+}
+
+a {
+  font-family: 'Lobster', cursive;
+  color: #563d7c;
+  font-size: 24px;
+}
+
+.main {
+  padding-top: 130px;
+}
+
+.effects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.demo {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 0 1 auto;
+  margin: 1em;
+}
+
+.demo textarea {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-size: 0.9em;
+  height: 32px;
+  padding: 6px 0px 0;
+  resize: none;
+  text-align: center;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #fff;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 14px 15px rgba(0, 0, 0, 0.06);
+  max-height: 130px;
+  max-width: calc(100vw - 2em);
+  padding: 1em;
+}
+
+nav > a {
+  display: inline-flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 1em;
+  text-transform: capitalize;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: .5em 2em;
+  text-decoration: none !important;
+  user-select: none !important;
+  outline: none !important;
+  cursor: pointer;
+  transition: .4s;
+  font-size: 16px;
+  display: inline-block;
+
+  background-color: #563d7c;
+  border: 2px solid #563d7c;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #563d7c !important;
+}
+
+tag {
+  background-color: rgba(220,220,220,.7);
+  padding: 3px;
+  border-radius: 4px;
+  color: #3d7e9a;
+}
+
+p {
+  white-space: pre-line;
+  line-height: 2em;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #34495e;
+  color: #ccc;
+  padding: 2em;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+
+footer > .back-to-top {
+  background-color: #34495e;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  border-radius: 50% 50% 0 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+footer > .back-to-top > svg {
+  width: 24px;
+  height: 24px;
+  color: #ccc;
+}
+
+footer > p {
+  height: min-content;
+}
+
+footer > p a {
+  color: #3d7e9a;
+  font-size: 20px;
+}

@@ -1,0 +1,12 @@
+// kl_hvr-fade
+.kl_hvr-fade figcaption {
+  opacity: 0;
+}
+
+.kl_hvr-fade:hover > img {
+  opacity: 0;
+}
+
+.kl_hvr-fade:hover figcaption {
+  opacity: 1;
+}

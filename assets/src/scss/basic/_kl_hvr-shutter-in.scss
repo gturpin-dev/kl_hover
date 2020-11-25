@@ -1,0 +1,52 @@
+// kl_hvr-shutter-in-*
+[class^='kl_hvr-shutter-in-'],
+[class*='kl_hvr-shutter-in-'] {
+
+  &:after,
+  &:before {
+    background: inherit;
+    position: absolute;
+    content: '';
+  }
+
+  &:after {
+    top: 0;
+    left: 0;
+  }
+
+  &:before {
+    right: 0;
+    bottom: 0;
+  }
+
+  figcaption {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &:hover figcaption {
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+}
+
+// kl_hvr-shutter-in-horiz
+.kl_hvr-shutter-in-horiz:after,
+.kl_hvr-shutter-in-horiz:before {
+  width: 0;
+  height: 100%;
+}
+.kl_hvr-shutter-in-horiz:hover:after,
+.kl_hvr-shutter-in-horiz:hover:before {
+  width: 50%;
+}
+// kl_hvr-shutter-in-vert
+.kl_hvr-shutter-in-vert:after,
+.kl_hvr-shutter-in-vert:before {
+  height: 0;
+  width: 100%;
+}
+.kl_hvr-shutter-in-vert:hover:after,
+.kl_hvr-shutter-in-vert:hover:before {
+  height: 50%;
+}

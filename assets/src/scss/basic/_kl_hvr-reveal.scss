@@ -1,0 +1,46 @@
+// kl_hvr-reveal-*
+[class^='kl_hvr-reveal-'],
+[class*='kl_hvr-reveal-'] {
+
+  &:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background-color: inherit;
+  }
+
+  figcaption {
+    opacity: 0;
+  }
+
+  &:hover {
+    &:before {
+      transform: translate(0, 0);
+    }
+
+    figcaption {
+      opacity: 1;
+      transition-delay: 0.2s;
+    }
+  }
+}
+
+// kl_hvr-reveal-up
+.kl_hvr-reveal-up:before {
+  transform: translateY(100%);
+}
+// kl_hvr-reveal-down
+.kl_hvr-reveal-down:before {
+  transform: translateY(-100%);
+}
+// kl_hvr-reveal-left
+.kl_hvr-reveal-left:before {
+  transform: translateX(100%);
+}
+// kl_hvr-reveal-right
+.kl_hvr-reveal-right:before {
+  transform: translateX(-100%);
+}

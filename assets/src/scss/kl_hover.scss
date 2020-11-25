@@ -1,0 +1,22 @@
+@import './base';
+@import './container';
+
+// import basic effects
+@import './basic/kl_hvr-blur';
+@import './basic/kl_hvr-fade';
+@import './basic/kl_hvr-flip';
+@import './basic/kl_hvr-fold';
+@import './basic/kl_hvr-hinge';
+@import './basic/kl_hvr-push';
+@import './basic/kl_hvr-reveal';
+@import './basic/kl_hvr-shutter-in';
+@import './basic/kl_hvr-shutter-out';
+@import './basic/kl_hvr-shutter-in-out';
+@import './basic/kl_hvr-slide';
+@import './basic/kl_hvr-zoom';
+
+// import extra effects
+@import './extra/kl_hvr-back';
+@import './extra/kl_hvr-pasDeNom';
+@import './extra/kl_hvr-zoom';
+@import './extra/kl_hvr-overlay-expand';

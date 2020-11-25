@@ -1,0 +1,102 @@
+.kl_hvr-pasDeNom {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  min-width: 230px;
+  max-width: 300px;
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  background: #000;
+
+  *,
+  &:before,
+  &:after {
+    transition: all 0.4s ease;
+  }
+
+  img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    content: '';
+    background-color: #fff;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  &:before {
+    width: 0;
+    height: 1px;
+  }
+
+  &:after {
+    height: 0;
+    width: 1px;
+  }
+
+  figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    padding: 15px 20px;
+    background: transparent;
+  }
+
+  h3,
+  p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: normal;
+    opacity: 0;
+  }
+
+  p {
+    font-size: .8em;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+
+    img {
+      zoom: 1;
+      filter: alpha(opacity=20);
+      opacity: 0.4;
+    }
+
+    &:after,
+    &:before {
+      opacity: 1;
+      transition-delay: 0.25s;
+    }
+
+    &:before {
+      width: 40px;
+    }
+
+    &:after {
+      height: 40px;
+    }
+
+    h3,
+    p {
+      opacity: 1;
+    }
+
+    h3 {
+      transition-delay: 0.3s;
+    }
+
+    p {
+      transition-delay: 0.35s;
+    }
+  }
+}

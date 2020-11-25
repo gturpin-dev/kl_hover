@@ -1,0 +1,96 @@
+// kl_hvr-flip-*
+[class^='kl_hvr-flip-'],
+[class*=' kl_hvr-flip-'] {
+  perspective: 50em;
+
+  img {
+    backface-visibility: hidden;
+  }
+
+  figcaption {
+    opacity: 0;
+  }
+
+  &:hover {
+    img {
+      opacity: 0;
+    }
+
+    figcaption {
+      opacity: 1;
+      transition-delay: 0.15s;
+    }
+  }
+}
+// kl_hvr-flip-horiz
+.kl_hvr-flip-horiz {
+
+  figcaption {
+    transform: rotateX(90deg);
+    -ms-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+  }
+
+  &:hover {
+    > img {
+      transform: rotateX(-180deg);
+    }
+
+    figcaption {
+      transform: rotateX(0deg);
+    }
+  }
+}
+// kl_hvr-flip-vert
+.kl_hvr-flip-vert {
+
+  figcaption {
+    transform: rotateY(90deg);
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+
+  &:hover {
+    > img {
+      transform: rotateY(-180deg);
+    }
+
+    figcaption {
+      transform: rotateY(0deg);
+    }
+  }
+}
+// kl_hvr-flip-diag-1
+.kl_hvr-flip-diag-1 {
+
+  figcaption {
+    transform: rotate3d(1, -1, 0, 100deg);
+  }
+
+  &:hover {
+    > img {
+      transform: rotate3d(-1, 1, 0, 100deg);
+    }
+
+    figcaption {
+      transform: rotate3d(0, 0, 0, 0deg);
+    }
+  }
+}
+// kl_hvr-flip-diag-2
+.kl_hvr-flip-diag-2 {
+
+  figcaption {
+    transform: rotate3d(1, 1, 0, 100deg);
+  }
+
+  &:hover {
+    > img {
+      transform: rotate3d(-1, -1, 0, 100deg);
+    }
+
+    figcaption {
+      transform: rotate3d(0, 0, 0, 0deg);
+    }
+  }
+}

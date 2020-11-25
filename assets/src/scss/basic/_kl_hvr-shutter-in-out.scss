@@ -1,0 +1,74 @@
+// kl_hvr-shutter-in-out-horiz
+.kl_hvr-shutter-in-out-horiz:after,
+.kl_hvr-shutter-in-out-horiz:before {
+  width: 0;
+  height: 100%;
+}
+.kl_hvr-shutter-in-out-horiz:hover:after,
+.kl_hvr-shutter-in-out-horiz:hover:before {
+  width: 100%;
+}
+
+// kl_hvr-shutter-in-out-vert
+.kl_hvr-shutter-in-out-vert:after,
+.kl_hvr-shutter-in-out-vert:before {
+  height: 0;
+  width: 100%;
+}
+.kl_hvr-shutter-in-out-vert:hover:after,
+.kl_hvr-shutter-in-out-vert:hover:before {
+  height: 100%;
+}
+
+// kl_hvr-shutter-in-out-diag-1
+.kl_hvr-shutter-in-out-diag-1 {
+  &:after,
+  &:before {
+    width: 200%;
+    height: 200%;
+    transition: all 0.6s ease;
+  }
+
+  &:after {
+    transform: skew(-45deg) translateX(-150%);
+  }
+
+  &:before {
+    transform: skew(-45deg) translateX(150%);
+  }
+
+  &:hover:after {
+    transform: skew(-45deg) translateX(-50%);
+  }
+
+  &:hover:before {
+    transform: skew(-45deg) translateX(50%);
+  }
+}
+
+// kl_hvr-shutter-in-out-diag-2
+.kl_hvr-shutter-in-out-diag-2 {
+
+  &:after,
+  &:before {
+    width: 200%;
+    height: 200%;
+    transition: all 0.6s ease;
+  }
+
+  &:after {
+    transform: skew(45deg) translateX(-100%);
+  }
+
+  &:before {
+    transform: skew(45deg) translateX(100%);
+  }
+
+  &:hover:after {
+    transform: skew(45deg) translateX(0%);
+  }
+
+  &:hover:before {
+    transform: skew(45deg) translateX(0%);
+  }
+}

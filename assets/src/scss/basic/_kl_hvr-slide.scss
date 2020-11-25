@@ -1,0 +1,29 @@
+/* kl_hvr-slide-*
+   ----------------------------- */
+[class^='kl_hvr-slide-']:hover figcaption,
+[class*=' kl_hvr-slide-']:hover figcaption {
+  transform: translate(0, 0);
+}
+/* kl_hvr-slide-up
+   ----------------------------- */
+.kl_hvr-slide-up figcaption {
+  transform: translateY(100%);
+  background-color: inherit;
+}
+/* kl_hvr-slide-down
+   ----------------------------- */
+.kl_hvr-slide-down figcaption {
+  transform: translateY(-100%);
+  background-color: inherit;
+}
+/* kl_hvr-slide-left
+   ----------------------------- */
+.kl_hvr-slide-left figcaption {
+  transform: translateX(100%);
+  background-color: inherit;
+}
+/* kl_hvr-slide-right
+   ----------------------------- */
+.kl_hvr-slide-right figcaption {
+  transform: translateX(-100%);
+}

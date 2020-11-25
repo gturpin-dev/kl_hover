@@ -1,0 +1,51 @@
+figure.kl_hvr-back-up {
+  position: relative;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 225px;
+  max-height: 225px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  overflow: visible;
+
+  img {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    opacity: 1;
+    width: 100%;
+    transform: translate(-50%, 0%);
+  }
+
+  figcaption {
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    top: 50%;
+    padding: 20px 30px;
+  }
+
+  h3,
+  p {
+    margin: 0;
+    width: 100%;
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  &:hover {
+    background-color: #1061a1;
+
+    img {
+      width: 60%;
+      top: -10%;
+    }
+
+    figcaption h3,
+    figcaption p {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.kl_hvr-blur {
+
+  figcaption {
+    opacity: 0;
+  }
+
+  &:hover figcaption {
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+
+  &:hover > img {
+    filter: blur(30px);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,56 @@
+$bgColor: rgba(1, 87, 155, 0.75);
+
+[class^='kl_hvr-'],
+[class*=' kl_hvr-'] {
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  max-width: 100%;
+  background-color: $bgColor;
+  color: #fff;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translateZ(0);
+
+  > img {
+    vertical-align: top;
+    max-width: 100%;
+  }
+
+  figcaption {
+    background-color: inherit;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  h3,
+  p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  &,
+  &:before,
+  &:after,
+  & *,
+  & *:before,
+  & *:after {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+  }
+}
